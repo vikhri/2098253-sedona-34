@@ -10,7 +10,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="#">              
-              <img src="logo" alt="Логотип">
+              <img src="/images/logo-sedona.svg" width="139" height="70" alt="Логотип">
             </a>
           </li>
           <li class="navigation-item navigation-item-current">
@@ -23,25 +23,23 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-icons">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-search-icon">
             <a href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item navigation-icons">
+          <li class="navigation-item navigation-favorite-icon">
             <a href="#">
               <span class="visually-hidden">
-                Избранное<span class="favourite-number">12</span>
+                Избранное <span class="favourite-number">12</span>
               </span>
             </a>
           </li>
-          <li class="navigation-item navigation-link">
+          <li class="navigation-item navigation-button">
             <a href="/catalog.html">
-              <span class="visually-hidden">
-                Хочу сюда
-              </span>
+              Хочу сюда              
             </a>
           </li>
           
@@ -51,12 +49,7 @@
     <main class="main-index">      
       <section class="main-banner">
         <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-        <img src="main-banner.png" alt="Главный баннер">    
-        <p class="upper-frase">Welcome to the gorgeus</p>
-        <p class="">SEDONA</p>
-        <p class="bottom-frase">
-          "Because the Gran Canyon sucks!"
-        </p>
+        <img src="/images/welcome.svg" width="458" height="352" alt="Главный баннер">        
       </section>
       <section class="advantages">
         <h2 сlass="visually-hidden">Преимущества Седоны</h2>
@@ -64,10 +57,13 @@
         <p class="block-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item advantage-colored">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-number">-№1-</p>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="first-advantage.png" alt="Город Седона">
+            <div class="advantage-colored-text">
+              <h3 class="advantages-title">Настоящий городок</h3>
+              <p class="advantages-number">-№1-</p>
+              <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+              <img src="/images/advantage-city.jpg" width="800" height="384" alt="Город Седона">
+              
             <ul class="city-advantages-list">
               <li class="city-advantages-item">
                 <span class="city-advantage-icon-hotel"></span>
@@ -90,10 +86,12 @@
             </ul>
           </li>
           <li class="advantages-item advantage-colored">
+            <div class="advantage-colored-text">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-number">-№2-</p>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img src="second-advantage.png" alt="Мост дьявола">
+            </div>  
+            <img src="/images/advantage-canyon.jpg" width="800" height="384" alt="Мост дьявола">
           </li> 
           <li class="advantages-item">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -117,41 +115,31 @@
         <p class="block-title">Заинтересовались?</p>
         <p class="block-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <p class="hotel-search-link"><a href="#">Поиск гостиницы в Седоне</a></p>
+        <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="email-subscribtion subscribtion-background">
-        <h2 class="visually-hidden">Подписаться на рассылку</h2>
-        <p class="block-title">Подпишитесь на рассылку</p>
+        <h2 class="subscribtion-title">Подписаться на рассылку</h2>        
         <p class="block-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribtion-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <p class="appointment-form-email">
-            <input type="email" id="email-subscribtion" name="email-subscribtion" placeholder="Ваш e-mail">
-          </p>
-          <button class="button" type="submit">Подписаться</button>
+        <form class="subscribtion-form" action="https://echo.htmlacademy.ru/courses" method="get">         
+          <input type="email" id="email-subscribtion" name="email-subscribtion" placeholder="Ваш e-mail">          
+          <button class="button subscribtion-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-<footer class="main-footer">
-<div class="social-media">
-  <ul class="social-media-list">
-    <li class="social-media-item">
-      <a href="https://vk.com/htmlacademy" target="_blank" title="Наша группа Вконтакте"><img src="vk.png"></a>
-    </li>
-    <li class="social-media-item">
-      <a href="tg://resolve?domain=htmlacademy" target="_blank" title="Наш телеграм"><img src="telegram.png"></a>
-    </li>
-    <li class="social-media-item">
-      <a href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="Наш ютуб канал"><img src="youtube.png"></a>
-    </li>
-  </ul>
-</div>
-<div class="footer-contacts">
-  <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-</div>
-<div class="footer-logo">
-  <a href="/"><img src="footer-logo.png" alt="Логотип"></a>
-</div>
-</footer>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <footer class="main-footer">
+      <ul class="social-media-list">
+        <li class="social-media-item">
+          <a href="https://vk.com/htmlacademy" target="_blank" title="Наша группа Вконтакте"><img src="/images/icons/vk-icon.svg" width="24" height="14" alt="Вконтакте"></a>
+        </li>
+        <li class="social-media-item">
+          <a href="tg://resolve?domain=htmlacademy" target="_blank" title="Наш телеграм"><img src="/images/icons/telegram-icon.svg" width="18" height="17" alt="Телеграм"></a>
+        </li>
+        <li class="social-media-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="Наш ютуб канал"><img src="/images/icons/youtube-icon.svg" width="22" height="17" alt="Ютуб"></a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="/"><img src="/images/html-academy-logo.svg" width="115" height="34" alt="Логотип Академии"></a>
+    </footer>
   </body>
 </html>
