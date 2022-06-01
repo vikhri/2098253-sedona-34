@@ -41,6 +41,16 @@ body {
     text-align: center;
 }
 
+.navigation-search-icon {
+    background-image: url("../images/icons/search-icon.svg");
+    background-repeat: no-repeat;
+}
+
+.navigation-favorite-icon {
+    background-image: url("../images/icons/favorite-icon.svg");
+    background-repeat: no-repeat;
+}
+
 .main-banner {
     background-color: cornflowerblue;
     background-image: url("../images/index-background.jpg");
@@ -142,21 +152,50 @@ body {
     color: #333333;
 }
 
-.hotel-search-link {
+/* .hotel-search-link {
     background: #756157;
     border-radius: 4px;
     color: #FFFFFF;
-}
+} */
 
 .hotel-search {
     text-align: center;
 }
 
-.email-subscribtion {
-    background-image: url("../images/subscribtion-background.jpg");
-    text-align: center;
+.button {
+    background: #756157;
+    border-radius: 4px;
     color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hotel-search-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.email-subscribtion {
+    text-align: center;
+    color: #333333;
+}
+
+.subscribtion-background {
+    background-image: url("../images/subscribtion-background.jpg");
     background-color: cornflowerblue;
+    color: #FFFFFF;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.subscribtion-button {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #82B3D3;
+    border-color: transparent;
+    border-radius: 0px 10px 10px 0px;
+    text-transform: uppercase;
 }
 
 .subscribtion-title {
@@ -166,13 +205,19 @@ body {
     text-transform: uppercase;
 }
 
+.subcribtion-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
 .contacts-phone {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    color:#000000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -180,3 +225,175 @@ body {
     visibility: hidden;
 }
 
+.navigation-button a {
+    background: #756157;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.search-header {
+    background-image: url("../images/filter-background.jpg");
+    background-color: #82B3D3;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+
+}
+
+.search-header a {
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.breadcrumbs-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+.search-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+
+.filter-button-apply {
+    background: #82B3D3;
+    border-radius: 4px;
+    border-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.filter-button-reset {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    color: #FFFFFF;
+}
+
+.button-sort-slideshow {
+    background-image: url("../images/icons/icon-table.svg");
+    background-repeat: no-repeat;
+}
+
+.button-sort-list {
+    background-image: url("../images/icons/icon-list.svg");
+    background-repeat: no-repeat;
+}
+
+.button-sort-table {
+    background-image: url("../images/icons/icon-table.svg");
+    background-repeat: no-repeat;
+}
+
+.accomodation-search-result {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-control {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.accomodation-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.accomodation-card a {
+    text-decoration: none;
+}
+
+.accomodation-card-price,
+.accomodation-card-type {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.accomodation-card-info {
+    background: #756157;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-color: transparent;
+
+}
+
+.accomodation-card-button {
+    background: #82B3D3;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-color: transparent;
+
+}
+
+.accomodation-card-rating {
+    background: #F2F2F2;
+    border-radius: 4px;
+    text-align: center;
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.favorite-added {
+    background: #7DB54F;
+}
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.pagination-select {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}

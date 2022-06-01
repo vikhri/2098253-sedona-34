@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона - поиск гостиниц</title>
   </head>
   <body>
@@ -119,7 +120,7 @@
             </header>
             <section class="accomodation-catalog">
               <div>
-                <h2>Найдено гостиниц: <span class="accomodation-search-result">38</span></h2>                
+                <h2 class="accomodation-search-result">Найдено гостиниц: <span class="accomodation-search-result-number">38</span></h2>                
                   <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала популярное</option>
                     <option value="cheap">Сначала дешёвое</option>
@@ -127,17 +128,17 @@
                   </select>                
                   <ul>
                     <li>
-                      <a href="#" class="button button-sort-table">
+                      <a href="#" class="button-sort-table">
                         <span class="visually-hidden">Показать таблицей</span>
                       </a>
                     </li>  
                     <li>
-                      <a class="button button-sort-slideshow" href="#">
+                      <a class="button-sort-slideshow" href="#">
                         <span class="visually-hidden">Показать слайдшоу</span>
                       </a>
                     </li>
                     <li>
-                      <a class="button button-sort-list" href="#">
+                      <a class="button-sort-list" href="#">
                         <span class="visually-hidden">Показать списком</span>
                       </a>
                     </li>                  
@@ -151,7 +152,7 @@
                         </a>
                         <p class="accomodation-card-type">Гостиница</p>
                         <p class="accomodation-card-price">От 4000 &#8381;</p>
-                        <a class="accomodation-card-link" href="#">Подробнее</a>
+                        <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button">В избранное</button>               
                         <img class="accomodation-card-stars" src="images/icons/4-stars.png" width="140" height="37" alt="Категория 4 звезды">
                         <p class="accomodation-card-rating">Рейтинг: 8,5</p>
@@ -163,7 +164,7 @@
                         </a>
                         <p class="accomodation-card-type">Гостиница</p>
                         <p class="accomodation-card-price">От 5000 &#8381;</p>
-                        <a class="accomodation-card-link" href="#">Подробнее</a>
+                        <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button favorite-added">В избранном</button>
                         <img class="accomodation-card-stars" src="images/icons/4-stars.png" width="140" height="37"alt="Категория 4 звезды">                          
                         <p class="accomodation-card-rating">Рейтинг: 9,2</p>                          
@@ -175,7 +176,7 @@
                          </a>
                         <p class="accomodation-card-type">Гостиница</p>
                         <p class="accomodation-card-price">От 2500 &#8381;</p>
-                        <a class="accomodation-card-link" href="#">Подробнее</a>
+                        <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button">В избранное</button>
                         <img class="accomodation-card-stars" src="images/icons/3-stars.png" width="140" height="37" alt="Категория 3 звезды">                          
                         <p class="accomodation-card-rating">Рейтинг: 6,9</p>                          
@@ -187,8 +188,8 @@
                         </a>
                         <p class="accomodation-card-type">Гостиница</p>
                         <p class="accomodation-card-price">От 1500 &#8381;</p>
-                        <a class="accomodation-card-link" href="#">Подробнее</a>
-                        <button class="button accomodation-card-button">Избранное</button>
+                        <a class="button accomodation-card-info" href="#">Подробнее</a>
+                        <button class="button accomodation-card-button">В Избранное</button>
                         <img class="accomodation-card-stars" src="images/icons/2-stars.png" width="140" height="37" alt="Категория 2 звезды">                          
                         <p class="accomodation-card-rating">Рейтинг: 5,0</p>                        
                     </li>
@@ -213,7 +214,7 @@
                       <a class="pagination-link" href="#">10</a>
                     </li>                    
                 </ul>
-                <label>                        
+                <label class="pagination-select">                        
                     Гостиниц на странице:
                     <select name="page-number">
                       <option value="1">1</option>
