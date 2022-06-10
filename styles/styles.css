@@ -516,6 +516,11 @@ body {
     box-sizing: border-box;
     width: 340px;
     padding: 20px;
+    margin-right: 18px;
+}
+
+.accomodation-list li:nth-child(3) {
+    margin-right: 0;
 }
 
 .accomodation-card a {
