@@ -7,50 +7,50 @@
   </head>
   <body>
     <div class="wrapper">
-        <header class="page-header">
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item main-logo">
-                <a href="#">              
-                  <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип">
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-item-link" href="#">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-item-link" href="#">О седоне</a>
-              </li>
-              <li class="navigation-item navigation-item-current">
-                <a class="navigation-item-link" href="catalog.html">Гостиницы</a> 
-              </li>
-            </ul>
-            <ul class="navigation-list navigation-icons">
-              <li class="navigation-item navigation-search-icon">
-                <a href="#">
-                  <span class="visually-hidden">
-                    Поиск
-                  </span>
-                </a>
-              </li>
-              <li class="navigation-item navigation-favorite-icon">
-                <a href="#">
-                  <span class="visually-hidden">
-                    Избранное<span class="favourite-number">12</span>
-                  </span>
-                </a>
-              </li>
-              <li class="navigation-item button navigation-button">
-                <a class="navigation-catalog-link" href="/catalog.html">                  
-                  Хочу сюда
-                </a>
-              </li>              
-            </ul>
-          </nav>  
-        </header>
+      <header class="page-header">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="main-logo" href="./index.html">
+                <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип">
+              </a>
+            </li>
+            <li class="navigation-item navigation-item-current">
+              <a class="navigation-item-link" href="./index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-link" href="./index.html">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-link" href="./catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigatio-list navigation-icons">
+            <li class="navigation-item">
+              <a class="navigation-item-link" href="#">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-link" href="#">
+                <span class="visually-hidden">
+                  Избранное <span class="favourite-number">12</span>
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-catalog-link button navigation-button" href="./catalog.html">
+                Хочу сюда
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
         <main class="main-inner main-container">
             <header class="search-header">
-                <h1>Гостиницы Седоны</h1>
+                <h1 class="catalog-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
                       <a class="breadcrumbs-link" href="index.html"><span class="breadcrummbs-home-icon-"></span>Главная</a>
@@ -82,7 +82,7 @@
                                         <input class="control-input" type="checkbox" name="parking">
                                             Wi-fi
                                     </label>
-                                </li>                                                                             
+                                </li>
                             </ul>
                         </fieldset>
                         <fieldset class="search-filter-group-type">
@@ -105,17 +105,17 @@
                                         <input class="control-input" type="radio" name="accomodation-type" value="apartaments">
                                             Аппартаменты
                                     </label>
-                                </li>                  
+                                </li>
                             </ul>
                         </fieldset>
                         <fieldset class="search-filter-group-price">
-                            <legend class="search-filter-title">Стоимость, &#8381;:</legend>  
+                            <legend class="search-filter-title">Стоимость, &#8381;:</legend>
                                 <label>
                                     <input class="control-input-price" type="range" name="price-range" min="0" max="9000">
                                 </label>
                         </fieldset>
                         <div class="filter-buttons">
-                        <button class="button filter-button-apply" type="submit">Применить</button>                 
+                        <button class="button filter-button-apply" type="submit">Применить</button>
                         <button class="filter-button-reset" type="reset">Сбросить</button>
                         </div>
                     </form>
@@ -123,18 +123,18 @@
             </header>
             <section class="accomodation-catalog">
               <div class="search-result-header">
-                <h2 class="accomodation-search-result">Найдено гостиниц: <span class="accomodation-search-result-number">38</span></h2>                
+                <h2 class="accomodation-search-result">Найдено гостиниц: <span class="accomodation-search-result-number">38</span></h2>
                   <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала популярное</option>
                     <option value="cheap">Сначала дешёвое</option>
                     <option value="expensive">Сначала дорогое</option>
-                  </select>                
+                  </select>
                   <ul class="sort-buttons">
                     <li class="sort-buttons-item">
                       <a href="#" class="button-sort-table">
                         <span class="visually-hidden">Показать таблицей</span>
                       </a>
-                    </li>  
+                    </li>
                     <li class="sort-buttons-item">
                       <a class="button-sort-slideshow" href="#">
                         <span class="visually-hidden">Показать слайдшоу</span>
@@ -144,7 +144,7 @@
                       <a class="button-sort-list" href="#">
                         <span class="visually-hidden">Показать списком</span>
                       </a>
-                    </li>                  
+                    </li>
                   </ul>
                 </div>
                 <ul class="accomodation-list">
@@ -156,7 +156,7 @@
                         <p class="accomodation-card-type">Гостиница</p>
                         <p class="accomodation-card-price">От 4000 &#8381;</p>
                         <a class="button accomodation-card-info" href="#">Подробнее</a>
-                        <button class="button accomodation-card-button">В избранное</button>               
+                        <button class="button accomodation-card-button">В избранное</button>
                         <img class="accomodation-card-stars" src="images/icons/4-stars.png" width="140" height="37" alt="Категория 4 звезды">
                         <p class="accomodation-card-rating">Рейтинг: 8,5</p>
                     </li>
@@ -169,8 +169,8 @@
                         <p class="accomodation-card-price">От 5000 &#8381;</p>
                         <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button favorite-added">В избранном</button>
-                        <img class="accomodation-card-stars" src="images/icons/4-stars.png" width="140" height="37"alt="Категория 4 звезды">                          
-                        <p class="accomodation-card-rating">Рейтинг: 9,2</p>                          
+                        <img class="accomodation-card-stars" src="images/icons/4-stars.png" width="140" height="37"alt="Категория 4 звезды">
+                        <p class="accomodation-card-rating">Рейтинг: 9,2</p>
                     </li>
                     <li class="accomodation-card">
                         <a class="accomodation-card-link" href="#">
@@ -181,8 +181,8 @@
                         <p class="accomodation-card-price">От 2500 &#8381;</p>
                         <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button">В избранное</button>
-                        <img class="accomodation-card-stars" src="images/icons/3-stars.png" width="140" height="37" alt="Категория 3 звезды">                          
-                        <p class="accomodation-card-rating">Рейтинг: 6,9</p>                          
+                        <img class="accomodation-card-stars" src="images/icons/3-stars.png" width="140" height="37" alt="Категория 3 звезды">
+                        <p class="accomodation-card-rating">Рейтинг: 6,9</p>
                     </li>
                     <li class="accomodation-card">
                         <a class="accomodation-card-link" href="#">
@@ -193,12 +193,12 @@
                         <p class="accomodation-card-price">От 1500 &#8381;</p>
                         <a class="button accomodation-card-info" href="#">Подробнее</a>
                         <button class="button accomodation-card-button">В Избранное</button>
-                        <img class="accomodation-card-stars" src="images/icons/2-stars.png" width="140" height="37" alt="Категория 2 звезды">                          
-                        <p class="accomodation-card-rating">Рейтинг: 5,0</p>                        
+                        <img class="accomodation-card-stars" src="images/icons/2-stars.png" width="140" height="37" alt="Категория 2 звезды">
+                        <p class="accomodation-card-rating">Рейтинг: 5,0</p>
                     </li>
                 </ul>
                 <div class="pagination-container">
-                <ul class="pagination">                    
+                <ul class="pagination">
                     <li class="pagination-item">
                       <a class="pagination-link pagination-current">1</a>
                     </li>
@@ -216,9 +216,9 @@
                     </li>
                     <li class="pagination-item">
                       <a class="pagination-link" href="#">10</a>
-                    </li>                    
+                    </li>
                 </ul>
-                <label class="pagination-select">                        
+                <label class="pagination-select">
                     Гостиниц на странице:
                     <select name="page-number">
                       <option value="1">1</option>
@@ -236,8 +236,8 @@
                 </div>
             </section>
             <section class="email-subscribtion">
-                <h2 class="subscribtion-title">Подписаться на рассылку</h2>                
-                <p class="block-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <h2 class="subscribtion-title">Подписаться на рассылку</h2>
+                <p class="subcribtion-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
                 <form class="subscribtion-form" action="https://echo.htmlacademy.ru/courses" method="get">
                   <input type="email" id="email-subscribtion" name="email-subscribtion" placeholder="Ваш e-mail">
                   <button class="button subscribtion-button" type="submit">Подписаться</button>
