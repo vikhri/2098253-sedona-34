@@ -62,6 +62,30 @@ body {
     text-transform: uppercase;
 }
 
+
+
+.brown-button:hover,
+.brown-button:focus {
+    background-color: #615048;
+}
+
+
+.blue-button:hover,
+.blue-button:focus {
+    background-color: #68A2CA;
+}
+
+.green-button:hover,
+.green-button:focus {
+    background-color: #6C9E42;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+
 /*navigation*/
 
 .page-header {
@@ -104,7 +128,29 @@ ul.navigation-icons {
     padding: 0;
     margin: 0;
     margin-right: 70px;
+    justify-content: end;
 
+}
+
+
+.navigation-icons .navigation-item:nth-child(1) .navigation-item-link {
+    background-image: url('../images/icons/search-icon.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 12px;
+    padding: 0;
+    display: block;
+  }
+
+  .navigation-icons .navigation-item:nth-child(2) .navigation-item-link  {
+    background-image: url('../images/icons/favorite-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 12px;
+    padding: 0;
+    display: block;
+    position: relative;
 }
 
 .navigation-item-current {
@@ -123,6 +169,9 @@ ul.navigation-icons {
     margin: 0 17px;
 }
 
+.navigation-icons .navigation-item-link {
+    margin: 0;
+}
 
 .navigation-catalog-link {
     color: #FFFFFF;
@@ -132,10 +181,26 @@ ul.navigation-icons {
 }
 
 .navigation-icons .navigation-item-link {
-    min-width: 42px;
+    min-width: 18px;
     min-height: 66px;
     padding: 0;
 }
+
+.favourite-number {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #7DB54F;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+
 
 .navigation-button {
     display: block;
@@ -168,11 +233,23 @@ ul.navigation-icons {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 52px;
+    position: relative;
 }
+
+
 
 .main-banner img {
     display: block;
     margin: 0 auto;
+}
+
+.main-banner::after {
+ content: "";
+ background-image: url("../images/white-cover.svg");
+ width: 1200px;
+ height: 57px;
+ position: absolute;
+ bottom: 0;
 }
 
 .block-title {
@@ -227,6 +304,12 @@ ul.navigation-icons {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 1200px;
+    min-height: 384px;
+}
+
+.advantage-picture {
+    object-fit: cover;
 }
 
 .advantages-list {
@@ -240,6 +323,7 @@ ul.navigation-icons {
 
 .advantage-colored img {
     margin: 0;
+    object-fit: cover;
 }
 
 .advantages-description {
@@ -311,6 +395,11 @@ ul.navigation-icons {
     min-height: 384px;
 }
 
+.city-advantage-item img {
+    object-fit: contain;
+}
+
+
 .advantages-title-inner {
     padding: 0 85px 30px;
     margin: 0;
@@ -350,6 +439,8 @@ ul.navigation-icons {
 
 /*email-subscribtion*/
 
+
+
 .email-subscribtion {
     box-sizing: border-box;
     text-align: center;
@@ -368,6 +459,7 @@ ul.navigation-icons {
 }
 
 .subscribtion-button {
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 36px;
     background-color: #82B3D3;
@@ -375,6 +467,7 @@ ul.navigation-icons {
     border-radius: 0 10px 10px 0;
     margin: 0;
     min-width: 200px;
+    box-sizing: border-box;
 }
 
 .subscribtion-title {
@@ -408,7 +501,24 @@ ul.navigation-icons {
     border-radius: 10px 0 0 10px;
     padding-left: 22px;
     background-color: #F2F2F2;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
 }
+
+/* Line */
+.accomodation-catalog::after {
+    content: "";
+    display: block;
+    margin-right: 72px;
+    margin-left: 72px;
+    border-bottom: 2px solid #E6E6E6;
+    order: 4;
+}
+
+
+
 /*footer*/
 
 .main-footer {
@@ -428,6 +538,16 @@ ul.navigation-icons {
     text-decoration: none;
 }
 
+.contacts-phone:hover {
+ color: #756157;
+}
+.contacts-phone:focus {
+    color: #756157;
+}
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .social-media-list {
     list-style: none;
     max-width: 130px;
@@ -442,10 +562,39 @@ ul.navigation-icons {
 }
 
 .social-media-item {
-    width: 40px;
-    height: 47px;
+    display:flex;
+    align-items: center;
     padding: auto;
-    margin: 0;
+}
+
+.social-media-link:hover .socials-icon path {
+    fill: #68A2CA;
+}
+
+.social-media-link:focus .socials-icon path{
+    fill: #68A2CA;
+}
+
+.social-media-link:active .socials-icon path{
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+
+.academy-logo-link:hover .academy-logo path {
+    fill: #756157;
+}
+  .academy-logo-link:focus .academy-logo path{
+    fill: #756157;
+}
+  .academy-logo-link:active .academy-logo path{
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+
+
+
+.social-media-item:not(:nth-child(3n)) {
+    margin-right: 26px;
 }
 
 .contacts-phone {
@@ -456,7 +605,7 @@ ul.navigation-icons {
 
 }
 
-.academy-logo {
+.academy-logo-link {
     width: 115;
     margin-left: auto;
     margin-top: 49px;
@@ -543,12 +692,14 @@ ul.navigation-icons {
     width: 160px;
     padding: 0;
     margin-left: 70px;
+    margin-top: auto;
 }
 
 .filter-buttons button.filter-button-apply,
 .filter-buttons button.filter-button-reset {
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .breadcrumbs {
@@ -557,6 +708,14 @@ ul.navigation-icons {
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
+    position: relative;
+}
+
+.breadcrummbs-home-icon {
+background-image: url(../images/icons/home-breadcrumps.svg);
+background-position: center;
+background-size: 4px 4px;
+background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
@@ -571,6 +730,16 @@ ul.navigation-icons {
     line-height: 21px;
 }
 
+.breadcrumbs-item::after {
+    content:'';
+    display: block;
+    background-image: url(../images/icons/breadcrump-arrow.svg);
+    width: 8px;
+    height: 5px;
+    background-repeat: no-repeat;
+    position: absolute;
+
+  }
 
 
 .search-filter-list {
@@ -601,6 +770,10 @@ ul.navigation-icons {
     color: #FFFFFF;
     min-width: 160px;
     min-height: 48px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
 }
 
 .filter-button-reset {
@@ -609,6 +782,9 @@ ul.navigation-icons {
     border: none;
     color: #FFFFFF;
     padding-top: 20px ;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 
@@ -644,6 +820,7 @@ ul.navigation-icons {
     margin-left: 80px;
 }
 
+
 .sort-buttons-item {
     margin: 0;
     padding: 0;
@@ -662,6 +839,17 @@ ul.navigation-icons {
     padding: 0;
     margin: 0;
  }
+
+ .sort-buttons-link:hover {
+    border-color: #000000;
+ }
+ .sort-buttons-link:focus {
+    border-color: #68A2CA;
+}
+.sort-buttons-link:active {
+    border-color: #000;
+}
+
 
  button.sort-button-selected {
     border-color: black;
@@ -717,6 +905,7 @@ ul.navigation-icons {
     min-width: 287px;
     border-radius: 4px;
     border-color: #E5E5E5;
+    padding-left: 20px;
 }
 
 
@@ -772,7 +961,7 @@ ul.navigation-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 140px;
+    min-width: 140px;
     padding: 8px 16px;
     margin-right: 20px;
     box-sizing: border-box;
@@ -786,14 +975,13 @@ ul.navigation-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 140px;
+    min-width: 140px;
     padding: 8px 16px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
     border: 0;
     font-family: inherit;
-
 }
 
 
@@ -802,13 +990,14 @@ ul.navigation-icons {
     background: #F2F2F2;
     border-radius: 4px;
     text-align: center;
-    max-width: 160px;
+    min-width: 140px;
     text-transform: uppercase;
-    padding: 8px 32px;
+    padding: 8px 22px;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
+    margin-left: 20px;
 }
 
 .favorite-added {
@@ -824,6 +1013,7 @@ ul.navigation-icons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    order: 5;
 }
 
 .pagination {
@@ -851,6 +1041,18 @@ ul.navigation-icons {
     text-decoration: none;
 }
 
+
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+.pagination-link:focus {
+    background-color: #68A2CA;
+}
+.pagination-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
 .pagination-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -865,6 +1067,12 @@ ul.navigation-icons {
     min-height: 48px;
     border-radius: 4px;
     border-color: #E5E5E5;
+    padding-left: 20px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 
 }
 
