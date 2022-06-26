@@ -141,9 +141,9 @@ ul.navigation-icons {
     margin: 0 12px;
     padding: 0;
     display: block;
-  }
+}
 
-  .navigation-icons .navigation-item:nth-child(2) .navigation-item-link  {
+.navigation-icons .navigation-item:nth-child(2) .navigation-item-link {
     background-image: url('../images/icons/favorite-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -244,12 +244,12 @@ ul.navigation-icons {
 }
 
 .main-banner::after {
- content: "";
- background-image: url("../images/white-cover.svg");
- width: 1200px;
- height: 57px;
- position: absolute;
- bottom: 0;
+    content: "";
+    background-image: url("../images/white-cover.svg");
+    width: 1200px;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
 }
 
 .block-title {
@@ -539,11 +539,13 @@ ul.navigation-icons {
 }
 
 .contacts-phone:hover {
- color: #756157;
+    color: #756157;
 }
+
 .contacts-phone:focus {
     color: #756157;
 }
+
 .contacts-phone:active {
     color: rgba(117, 97, 87, 0.3);
 }
@@ -562,7 +564,7 @@ ul.navigation-icons {
 }
 
 .social-media-item {
-    display:flex;
+    display: flex;
     align-items: center;
     padding: auto;
 }
@@ -571,11 +573,11 @@ ul.navigation-icons {
     fill: #68A2CA;
 }
 
-.social-media-link:focus .socials-icon path{
+.social-media-link:focus .socials-icon path {
     fill: #68A2CA;
 }
 
-.social-media-link:active .socials-icon path{
+.social-media-link:active .socials-icon path {
     fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -583,10 +585,12 @@ ul.navigation-icons {
 .academy-logo-link:hover .academy-logo path {
     fill: #756157;
 }
-  .academy-logo-link:focus .academy-logo path{
+
+.academy-logo-link:focus .academy-logo path {
     fill: #756157;
 }
-  .academy-logo-link:active .academy-logo path{
+
+.academy-logo-link:active .academy-logo path {
     fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -712,10 +716,14 @@ ul.navigation-icons {
 }
 
 .breadcrummbs-home-icon {
-background-image: url(../images/icons/home-breadcrumps.svg);
-background-position: center;
-background-size: 4px 4px;
-background-repeat: no-repeat;
+    display: block;
+    background-image: url(../images/icons/home-breadcrumps.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
 }
 
 .breadcrumbs-link {
@@ -728,18 +736,26 @@ background-repeat: no-repeat;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+
 }
 
-.breadcrumbs-item::after {
-    content:'';
-    display: block;
+
+
+.breadcrumbs::after {
+    content: '';
+    display: flex;
+    align-items: center;
     background-image: url(../images/icons/breadcrump-arrow.svg);
     width: 8px;
-    height: 5px;
+    height: 8px;
+    background-size: contain;
     background-repeat: no-repeat;
+    margin-top:5px;
     position: absolute;
+    left: 25px;
+    top: 1px;
 
-  }
+}
 
 
 .search-filter-list {
@@ -781,7 +797,7 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
     border: none;
     color: #FFFFFF;
-    padding-top: 20px ;
+    padding-top: 20px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -838,26 +854,28 @@ background-repeat: no-repeat;
     border-style: solid;
     padding: 0;
     margin: 0;
- }
+}
 
- .sort-buttons-link:hover {
+.sort-buttons-link:hover {
     border-color: #000000;
- }
- .sort-buttons-link:focus {
+}
+
+.sort-buttons-link:focus {
     border-color: #68A2CA;
 }
+
 .sort-buttons-link:active {
     border-color: #000;
 }
 
 
- button.sort-button-selected {
+button.sort-button-selected {
     border-color: black;
     border-width: 2px;
     border-style: solid;
 }
 
- .button-sort-slideshow {
+.button-sort-slideshow {
     background-image: url("../images/icons/icon-slideshow.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1045,9 +1063,11 @@ background-repeat: no-repeat;
 .pagination-link:hover {
     background-color: #68A2CA;
 }
+
 .pagination-link:focus {
     background-color: #68A2CA;
 }
+
 .pagination-link:active {
     color: rgba(255, 255, 255, 0.3);
 }
