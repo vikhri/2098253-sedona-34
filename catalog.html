@@ -37,6 +37,7 @@
               <a class="navigation-item-link favourite-icon" href="#">
                 <span class="visually-hidden">
                   Избранное</span><span class="favourite-number">12</span>
+
               </a>
             </li>
             <li class="navigation-item">
@@ -66,21 +67,24 @@
                             <legend class="search-filter-title">Инфраструктура:</legend>
                             <ul class="search-filter-list">
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="checkbox" name="swimming-pool" checked>
                                             Бассейн
+                                        <span class="control-mark"></span>
                                         </label>
                                 </li>
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="checkbox" name="parking" checked>
                                             Парковка
+                                        <span class="control-mark"></span>
                                     </label>
                                 </li>
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="checkbox" name="parking">
                                             Wi-fi
+                                        <span class="control-mark"></span>
                                     </label>
                                 </li>
                             </ul>
@@ -89,40 +93,55 @@
                             <legend class="search-filter-title">Тип жилья:</legend>
                             <ul class="search-filter-list">
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="radio" name="accomodation-type" value="hotel">
                                             Гостиница
+                                            <span class="control-mark"></span>
+
                                     </label>
                                 </li>
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="radio" name="accomodation-type" value="motel">
                                             Мотель
+                                            <span class="control-mark"></span>
                                     </label>
                                 </li>
                                 <li class="search-filter-item">
-                                    <label>
+                                    <label class="search-filter-control">
                                         <input class="control-input" type="radio" name="accomodation-type" value="apartaments">
                                             Аппартаменты
+                                            <span class="control-mark"></span>
                                     </label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="search-filter-group-price">
                             <legend class="search-filter-title">Стоимость, &#8381;:</legend>
-                            <div>
-                              <label class="visually-hidden" for="price-from">Стоимость от:</label>
-                              <input class="price-input" type="number" id="price-from" name="price-from" value="0"
+                            <div class="price-range">
+                              <div class="price-range-from">
+                                <label class="visually-hidden" for="price-from">Стоимость от</label>
+                                <input class="price-input" type="number" id="price-from" name="price-from" value="0"
                                 placeholder="0">
+                                <span class="price-input-text">от</span>
+                              </div>
+                              <div class="price-range-till">
+                                <label class="visually-hidden" for="price-to">Стоимость до:</label>
+                                <input class="price-input" type="number" id="price-to" name="price-to" value="9000" placeholder="9000">
+                                <span class="price-input-text">до</span>
+                              </div>
                             </div>
-                            <div>
-                              <label class="visually-hidden" for="price-to">Стоимость до:</label>
-                              <input class="price-input" type="number" id="price-to" name="price-to" value="9000"
-                                placeholder="9000">
-                            </div>
-                                <label>
-                                    <input class="control-input-price" type="range" name="price-range" min="0" max="9000">
-                                </label>
+                            <div class="range">
+                              <div class="range-scale">
+                                <div class="range-bar" style="left: 1px; width: 216px">
+                                  <button class="range-toggle toggle-min">
+                                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                                  </button>
+                                  <button class="range-toggle toggle-max">
+                                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                                  </button>
+                                </div>
+                              </div>
                         </fieldset>
                         <div class="filter-buttons">
                         <button class="button blue-button filter-button-apply" type="submit">Применить</button>
@@ -217,6 +236,8 @@
                         </div>
                     </li>
                 </ul>
+              </section>
+              <section>
                 <div class="pagination-container">
                 <ul class="pagination">
                     <li class="pagination-item">
@@ -254,7 +275,7 @@
                     </select>
                 </label>
                 </div>
-            </section>
+              </section>
             <section class="email-subscribtion">
                 <h2 class="subscribtion-title">Подписаться на рассылку</h2>
                 <p class="subcribtion-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>

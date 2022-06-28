@@ -91,12 +91,13 @@
           </ul>
         </li>
         <li class="advantage-colored advantage-illustrated-second">
+          <img src="images/advantage-canyon.jpg" alt="Мост дьявола">
           <div class="advantage-colored-text">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description-number">— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
-          <img src="images/advantage-canyon.jpg" alt="Мост дьявола">
+
         </li>
         <li class="advantages-item city-advantages-dark">
           <h3 class="advantages-title">Небольшая площадь</h3>
@@ -153,6 +154,62 @@
     </a>
   </footer>
   </div>
+
+  <div class="modal-container visualy-hidden">
+    <div class="modal modal-form">
+      <button class="modal-close-button">
+        <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000" opacity="1"></svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <label class="field-label" for="arriving-data">Дата Заезда:</label>
+            <input class="search-form-field field-date" type="date" id="arriving-data" name="arriving-data" placeholder="27 апреля 2020">
+            <span class="message error-message">Мы не можем отправить вас в прошлое</span>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="checkout-data">Дата Выезда:</label>
+            <input class="search-form-field field-date" type="date" id="checkout-data" name="checkout-data" placeholder="27 апреля 2020">
+            <span class="message success-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="field-group-people">
+            <div class="field-group-adults">
+              <label class="field-label" for="adults">Взрослые:</label>
+              <input class="search-form-field field-people" type="number" id="adults" name="adults" value="2">
+              <div class="counter-controls">
+                <button class="counter-button counter-down" type="button">
+                  <svg class="counter-icon"  width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+                  <span class="visually-hidden">Убавить 1</span>
+                </button>
+                <button class="counter-button counter-up" type="button">
+                  <span class="visually-hidden">Прибавить 1</span>
+                  <svg class="counter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="field-group-children">
+               <label class="field-label" for="children"><span class="label-info"></span>Дети:</label><p class="modal-form-describtion">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              <input class="search-form-field field-people" type="number" id="children" name="children" value="1">
+              <div class="counter-controls">
+                <button class="counter-button counter-down" type="button">
+                  <svg class="counter-icon" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+                  <span class="visually-hidden">Убавить 1</span>
+                </button>
+                <button class="counter-button counter-up" type="button">
+                  <svg class="counter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/></svg>
+                  <span class="visually-hidden">Прибавить 1</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="button blue-button modal-form-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
 </body>
 
 </html>
