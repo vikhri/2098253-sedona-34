@@ -404,6 +404,7 @@ ul.navigation-icons {
 .advantages-title-inner {
     padding: 0 85px 30px;
     margin: 0;
+    line-height: 20px;
 }
 
 .city-advantage-item img {
@@ -416,11 +417,11 @@ ul.navigation-icons {
 
 .booking-title {
     margin-top: 91px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .booking-introduction {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
 }
 
 .hotel-search {
@@ -435,7 +436,8 @@ ul.navigation-icons {
     max-width: 574px;
     padding: 12px 15px;
     align-self: center;
-    margin: 0 auto 105px;
+    margin: 0 auto 93px;
+    box-sizing: border-box;
 }
 
 /*email-subscribtion*/
@@ -508,6 +510,7 @@ ul.navigation-icons {
     font-weight: 400;
     padding-top: 0;
     padding-bottom: 0;
+    box-sizing: border-box;
 }
 
 /* Line */
@@ -526,7 +529,7 @@ ul.navigation-icons {
 
 .main-footer {
     margin: 0;
-    padding: 0 72px;
+    padding: 0 72px 0 80px;
     width: 1200px;
     display: flex;
     box-sizing: border-box;
@@ -613,8 +616,8 @@ ul.navigation-icons {
 }
 
 .academy-logo-link {
-    width: 115;
-    margin-left: auto;
+    width: 115px;
+    margin-left: 235px;
     margin-top: 49px;
 }
 
@@ -700,7 +703,7 @@ ul.navigation-icons {
     width: 160px;
     padding: 0;
     margin-left: 70px;
-    margin-top: auto;
+    margin-top: 50px;
 }
 
 .filter-buttons button.filter-button-apply,
@@ -830,7 +833,7 @@ ul.navigation-icons {
 .search-filter-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 16px;
     text-transform: capitalize;
     color: #FFFFFF;
     margin: 0;
@@ -854,6 +857,10 @@ ul.navigation-icons {
 
 .search-filter-item:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.search-filter-item {
+line-height: 18px;
 }
 
 
@@ -993,7 +1000,8 @@ ul.navigation-icons {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
 }
 
 .filter-button-reset {
@@ -1133,6 +1141,13 @@ button.sort-button-selected {
     color: #000000;
 }
 
+.accomodation-card-link {
+padding: 0;
+margin: 0;
+line-height: 0;
+
+}
+
 .select-control {
     font-family: inherit;
     font-weight: 400;
@@ -1196,6 +1211,9 @@ button.sort-button-selected {
     line-height: 21px;
     color: #333333;
     min-width: 133px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .accomodation-card-type {
@@ -1203,8 +1221,10 @@ button.sort-button-selected {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    min-width: 143px;
-    margin-right: 20px;
+    width: 143px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
 }
 
 .accomodation-card-buttons {
