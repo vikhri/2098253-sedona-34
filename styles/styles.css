@@ -572,7 +572,6 @@ ul.navigation-icons {
 .social-media-item {
     display: flex;
     align-items: center;
-    padding: auto;
 }
 
 .social-media-link:hover .socials-icon path {
@@ -608,7 +607,7 @@ ul.navigation-icons {
 }
 
 .contacts-phone {
-    max-width: 340;
+    max-width: 340px;
     margin: 0;
     margin-top: 45px;
     margin-bottom: 35px;
