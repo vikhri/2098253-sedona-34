@@ -133,7 +133,6 @@ ul.navigation-icons {
 
 }
 
-
 .navigation-icons .navigation-item:nth-child(1) .navigation-item-link {
     background-image: url('../images/icons/search-icon.svg');
     background-size: 18px 18px;
@@ -144,7 +143,9 @@ ul.navigation-icons {
     display: block;
 }
 
-.navigation-icons .navigation-item:nth-child(2) .navigation-item-link {
+
+ .navigation-icons .navigation-item:nth-child(2) .navigation-item-link
+    {
     background-image: url('../images/icons/favorite-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
