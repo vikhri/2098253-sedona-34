@@ -105,7 +105,7 @@ body {
 
 .navigation-list {
     display: flex;
-    width: 630px;
+    max-width: 800px;
     flex-wrap: wrap;
     margin: 0;
     margin-left: 70px;
@@ -267,6 +267,9 @@ ul.navigation-icons {
 .introduction-title {
     margin-top: 63px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 620px;
 }
 
 .block-description {
@@ -281,6 +284,9 @@ ul.navigation-icons {
 
 .description-introduction {
     margin-bottom: 90px;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -361,6 +367,10 @@ ul.navigation-icons {
 
 }
 
+.advantages-item-last {
+    padding-top: 103px;
+
+}
 
 .city-advantages-list {
     display: flex;
@@ -481,21 +491,26 @@ ul.navigation-icons {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
 }
 
 .subcribtion-description {
     font-size: 22px;
     line-height: 26px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     margin-bottom: 46px;
+    max-width: 660px;
 }
 
 .subscribtion-form {
     display: flex;
-    min-width: 770px;
-    margin: 0;
+    width: 770px;
+    margin: 0 auto;
     justify-content: center;
+
 }
 
 .subscribtion-form input {
@@ -575,28 +590,28 @@ ul.navigation-icons {
     align-items: center;
 }
 
-.social-media-link:hover .socials-icon path {
+.social-media-link:hover path {
     fill: #68A2CA;
 }
 
-.social-media-link:focus .socials-icon path {
+.social-media-link:focus path {
     fill: #68A2CA;
 }
 
-.social-media-link:active .socials-icon path {
+.social-media-link:active path {
     fill: rgba(104, 162, 202, 0.3);
 }
 
 
-.academy-logo-link:hover .academy-logo path {
+.academy-logo-link:hover path {
     fill: #756157;
 }
 
-.academy-logo-link:focus .academy-logo path {
+.academy-logo-link:focus path {
     fill: #756157;
 }
 
-.academy-logo-link:active .academy-logo path {
+.academy-logo-link:active path {
     fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -794,22 +809,22 @@ ul.navigation-icons {
     border-radius: 4px;
 }
 
-.search-filter-checkbox:hover .control-mark {
+.search-filter-control:hover .control-mark {
     border-color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.search-filter-checkbox:focus .control-mark {
+.search-filter-control:focus .control-mark {
     border-color: #83B3D3;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.search-filter-checkbox:active .control-mark {
+.search-filter-control:active .control-mark {
     border-color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled .control-mark {
     border-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -1304,7 +1319,7 @@ line-height: 0;
 
 .pagination-link {
     display: block;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     padding: 12px 5px;
     text-align: center;
@@ -1441,7 +1456,7 @@ line-height: 0;
     box-shadow: inset 0 0 0 3px #83B3D3;
 }
 
-.modal-close-button:active .modal-close-icon path {
+.modal-close-button:active path {
     opacity: 0.3;
 }
 
