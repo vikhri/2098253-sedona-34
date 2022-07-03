@@ -795,9 +795,6 @@ ul.navigation-icons {
     line-height: 22px;
 }
 
-.control-input {
-    display: none;
-}
 
 .control-mark {
     position: absolute;
@@ -813,10 +810,18 @@ ul.navigation-icons {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+.control-input[type="checkbox"]:focus+.control-mark,
+.control-input[type="radio"]:focus+.control-mark {
+    outline: 3px solid #68A2CA;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
 .search-filter-control:focus .control-mark {
     outline: 3px solid #68A2CA;
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+
 
 .search-filter-control:active .control-mark {
     background-color: rgba(255, 255, 255, 0.6);
