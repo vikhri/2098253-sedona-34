@@ -127,7 +127,7 @@
       <h2 class="subscribtion-title">Подпишитесь на рассылку</h2>
       <p class="subcribtion-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscribtion-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <input type="email" id="email-subscribtion" name="email-subscribtion" placeholder="Ваш e-mail">
+        <input type="email" id="email-subscribtion" name="email-subscribtion" placeholder="Ваш e-mail" required>
         <button class="button blue-button subscribtion-button" type="submit">Подписаться</button>
       </form>
     </section>
@@ -165,18 +165,18 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group">
             <label class="field-label" for="arriving-data">Дата Заезда:</label>
-            <input class="search-form-field field-date" type="date" id="arriving-data" name="arriving-data">
+            <input class="search-form-field field-date" type="date" id="arriving-data" name="arriving-data" required>
             <span class="message error-message">Мы не можем отправить вас в прошлое</span>
           </div>
           <div class="field-group">
             <label class="field-label" for="checkout-data">Дата Выезда:</label>
-            <input class="search-form-field field-date" type="date" id="checkout-data" name="checkout-data" >
+            <input class="search-form-field field-date" type="date" id="checkout-data" name="checkout-data" required>
             <span class="message success-message">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="field-group-people">
             <div class="field-group-adults">
               <label class="field-label" for="adults">Взрослые:</label>
-              <input class="search-form-field field-people" type="number" id="adults" name="adults" value="2">
+              <input class="search-form-field field-people" type="number" id="adults" name="adults" value="2" required>
               <div class="counter-controls">
                 <button class="counter-button counter-down" type="button">
                   <svg class="counter-icon"  width="13" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
@@ -195,7 +195,7 @@
                 </span>
                 Дети:
               </label>
-              <input class="search-form-field field-people" type="number" id="children" name="children" value="1">
+              <input class="search-form-field field-people" type="number" id="children" name="children" value="1" required>
               <div class="counter-controls">
                 <button class="counter-button counter-down" type="button">
                   <svg class="counter-icon" width="13" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
