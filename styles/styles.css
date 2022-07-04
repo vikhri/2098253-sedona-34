@@ -341,7 +341,7 @@ ul.navigation-icons {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    padding: 0 85px 82px 85px;
+    padding: 0 85px 80px 85px;
     margin: 0;
     max-width: 230px;
 }
@@ -417,12 +417,12 @@ ul.navigation-icons {
 .advantages-title-inner {
     padding: 0 85px 30px;
     margin: 0;
-    line-height: 20px;
+    line-height: 28px;
 }
 
 .city-advantage-item img {
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
 }
 
 /*hotel search*/
