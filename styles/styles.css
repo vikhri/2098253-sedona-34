@@ -133,7 +133,8 @@ ul.navigation-icons {
 
 }
 
-.navigation-icons .navigation-item:nth-child(1) .navigation-item-link {
+.search-icon
+{
     background-image: url('../images/icons/search-icon.svg');
     background-size: 18px 18px;
     background-repeat: no-repeat;
@@ -144,7 +145,7 @@ ul.navigation-icons {
 }
 
 
- .navigation-icons .navigation-item:nth-child(2) .navigation-item-link
+ .favourite-icon
     {
     background-image: url('../images/icons/favorite-icon.svg');
     background-repeat: no-repeat;
@@ -171,9 +172,6 @@ ul.navigation-icons {
     margin: 0 17px;
 }
 
-.navigation-icons .navigation-item-link {
-    margin: 0;
-}
 
 .navigation-catalog-link {
     color: #FFFFFF;
@@ -186,6 +184,7 @@ ul.navigation-icons {
     min-width: 18px;
     min-height: 66px;
     padding: 0;
+    margin: 0 12px
 }
 
 .favourite-number {
