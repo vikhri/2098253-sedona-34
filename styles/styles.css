@@ -1677,8 +1677,9 @@ line-height: 0;
 
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
+
+.field-date::-webkit-inner-spin-button,
+.field-date::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
@@ -1746,13 +1747,14 @@ button.counter-button.counter-up {
 
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+
+.field-people::-webkit-outer-spin-button,
+.field-people::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
+.field-people {
     -moz-appearance: textfield;
 }
