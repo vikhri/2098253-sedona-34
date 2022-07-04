@@ -1708,11 +1708,11 @@ button.counter-button.counter-up {
     padding: 5px 0;
 }
 
-.counter-button:hover .counter-icon path {
+.counter-button:hover path {
     opacity: 1;
 }
 
-.counter-button:active .counter-icon path {
+.counter-button:active path {
     opacity: 0.2;
 }
 
@@ -1720,7 +1720,6 @@ button.counter-button.counter-up {
     outline: 3px solid #68A2CA;
     outline-offset: 6px;
     border-radius: 2px;
-
 
 }
 
