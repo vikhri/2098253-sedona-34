@@ -1773,12 +1773,15 @@ button.counter-button.counter-up {
 /* Chrome, Safari, Edge, Opera */
 
 .field-people::-webkit-outer-spin-button,
-.field-people::-webkit-inner-spin-button {
+.field-people::-webkit-inner-spin-button,
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button
+ {
     -webkit-appearance: none;
     margin: 0;
 }
 
 /* Firefox */
-.field-people {
+.field-people, .price-input {
     -moz-appearance: textfield;
 }
