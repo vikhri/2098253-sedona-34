@@ -295,14 +295,6 @@ ul.navigation-icons {
 /* advantages */
 
 
-.advantage-colored-text {
-    background-color: #82B3D3;
-    width: 400px;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-}
-
 .advantage-illustrated-first {
     display: flex;
     margin: 0;
@@ -347,6 +339,17 @@ ul.navigation-icons {
     color: #333333;
 }
 
+.advantage-colored-text {
+    background-color: #82B3D3;
+    width: 400px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-colored-text p {
+    color: #FFFFFF;
+}
 
 .advantages-description-number {
     font-weight: 400;
