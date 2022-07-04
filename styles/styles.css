@@ -665,7 +665,7 @@ ul.navigation-icons {
     background-size: cover;
     background-repeat: no-repeat;
     color: #FFFFFF;
-    padding: 35px 70px 64px 70px;
+    padding: 35px 70px 68px 70px;
 
 }
 
@@ -800,7 +800,7 @@ ul.navigation-icons {
     position: relative;
     display: block;
     padding-left: 40px;
-    line-height: 22px;
+    line-height: 21px;
 }
 
 
@@ -860,12 +860,12 @@ ul.navigation-icons {
 .search-filter-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 16px;
+    line-height: 26px;
     text-transform: capitalize;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -1024,7 +1024,7 @@ ul.navigation-icons {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     box-sizing: border-box;
 }
 
@@ -1035,10 +1035,9 @@ ul.navigation-icons {
     color: #FFFFFF;
     padding: 4px;
     font-family: "PT Sans", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     width: 100px;
-    min-height: 32px;
     border-radius: 4px;
     margin: 0 auto;
 }
