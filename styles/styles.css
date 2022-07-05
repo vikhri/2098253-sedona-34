@@ -72,15 +72,28 @@ body {
     background-color: #615048;
 }
 
+.brown-button:disabled {
+    background-color: #E5E5E5;
+}
+
 
 .blue-button:hover,
 .blue-button:focus {
     background-color: #68A2CA;
 }
 
+.blue-button:disabled {
+    background-color: #E5E5E5;
+}
+
+
 .green-button:hover,
 .green-button:focus {
     background-color: #6C9E42;
+}
+
+.green-button:disabled {
+    background-color: #E5E5E5;
 }
 
 .button:active {
@@ -434,7 +447,7 @@ ul.navigation-icons {
 .souvenir-image {
     background-image: url(../images/icons/souvenirs-icon.svg);
     width: 64px;
-    height: 76px;
+    height: 75px;
 }
 
 .food-image {
@@ -782,12 +795,28 @@ ul.navigation-icons {
     margin-right: 30px;
 }
 
+.breadcrumbs-link:hover {
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:hover path {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+    color:rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:active path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+
 .breadcrumbs-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     position: relative;
-
 }
 
 
