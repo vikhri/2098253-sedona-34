@@ -216,7 +216,7 @@ ul.navigation-icons {
     margin-top: 14px;
     font-size: 16px;
     inline-size: 20px;
-    line-height: 37px;
+    line-height: 20px;
     text-align: center;
     box-sizing: border-box;
     justify-content: center;
@@ -326,7 +326,7 @@ ul.navigation-icons {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    padding: 0 85px 80px 85px;
+    padding: 0 85px;
     margin: 0;
     max-width: 230px;
     color: #333333;
