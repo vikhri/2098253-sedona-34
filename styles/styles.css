@@ -296,25 +296,13 @@ ul.navigation-icons {
 
 /* advantages */
 
-
-.advantage-illustrated-first {
+.advantage-illustrated {
     display: flex;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
 }
 
-.advantage-illustrated-second {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 1200px;
-    min-height: 384px;
-}
-
-.advantage-picture {
-    object-fit: cover;
-}
 
 .advantages-list {
     display: flex;
@@ -325,10 +313,13 @@ ul.navigation-icons {
     list-style: none;
 }
 
-.advantage-colored img {
+.advantage-illustation img {
     margin: 0;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
 
 .advantages-description {
     font-weight: 400;
@@ -1247,7 +1238,6 @@ line-height: 0;
 .accomodation-card-content {
     display: flex;
     flex-wrap: wrap;
-    /* flex-grow: 1; */
 }
 
 .accomodation-card a {
